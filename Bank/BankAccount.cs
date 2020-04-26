@@ -38,6 +38,8 @@ namespace BankAccountNS
             if (amount < 0)
             {
                 throw new ArgumentOutOfRangeException("amount");
+                //throw new ApplicationException("amount");
+
             }
 
             m_balance -= amount; // intentionally incorrect code
